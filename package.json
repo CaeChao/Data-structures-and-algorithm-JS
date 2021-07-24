@@ -1,0 +1,29 @@
+{
+  "name": "data-structure-and-algorithm-in-js",
+  "version": "1.0.0",
+  "description": "This repository contains JavaScript based examples of my algorithms and data structures learning.",
+  "type": "module",
+  "scripts": {
+    "lint:js": "eslint src/js && eslint test/js",
+    "test:js": "mocha --compilers js:babel-core/register ./test/js  --recursive --reporter mochawesome",
+    "test:ts": "mocha -r ts-node/register ./test/ts/**/*.spec.ts ./test/ts/**/**/*.spec.ts --recursive",
+    "test": "npm run test:js && npm run test:ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaeChao/Algorithm-JS.git"
+  },
+  "author": "CaeChao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CaeChao/Algorithm-JS/issues"
+  },
+  "homepage": "https://github.com/CaeChao/Algorithm-JS#readme",
+  "dependencies": {
+    "babel-plugin-add-module-exports": "^1.0.4",
+    "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
+    "chai": "^4.3.4",
+    "lodash": "^4.17.21",
+    "mocha": "^9.0.2"
+  }
+}

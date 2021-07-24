@@ -1,4 +1,4 @@
-function alternatingSort(a) {
+export function alternatingSort(a) {
   let i = 0;
   let j = a.length - 1;
   let b = [];
