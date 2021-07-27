@@ -2,9 +2,8 @@
   "name": "data-structure-and-algorithm-in-js",
   "version": "1.0.0",
   "description": "This repository contains JavaScript based examples of my algorithms and data structures learning.",
-  "type": "module",
   "scripts": {
-    "lint:js": "eslint src/js && eslint test/js",
+    "lint": "./node_modules/.bin/eslint --ext .js --ext .ts './src/**/*.{js,ts}'",
     "test:js": "mocha --compilers js:babel-core/register ./test/js  --recursive --reporter mochawesome",
     "test:ts": "mocha -r ts-node/register ./test/ts/**/*.spec.ts ./test/ts/**/**/*.spec.ts --recursive",
     "test": "npm run test:js && npm run test:ts"
@@ -19,11 +18,20 @@
     "url": "https://github.com/CaeChao/Algorithm-JS/issues"
   },
   "homepage": "https://github.com/CaeChao/Algorithm-JS#readme",
-  "dependencies": {
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
     "babel-plugin-add-module-exports": "^1.0.4",
     "babel-plugin-transform-es2015-modules-umd": "^6.24.1",
     "chai": "^4.3.4",
-    "lodash": "^4.17.21",
-    "mocha": "^9.0.2"
+    "eslint": "^7.31.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "mocha": "^9.0.2",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   }
 }
