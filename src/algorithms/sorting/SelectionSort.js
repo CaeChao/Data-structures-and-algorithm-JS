@@ -1,11 +1,11 @@
-import {defaultCompare, swap} from '../utils.js';
+import { defaultCompare, swap } from '../utils.js';
 import _ from 'lodash';
 
 export function selectionSort(originalArray, compareFn = defaultCompare) {
   // clone original Array
   const array = [...originalArray];
 
-  for (let i = 0; i < array.length - 1; i += 1) {
+  for (let i = 0; i < array.length - 1; i++) {
     let minIndex = i;
 
     for (let j = i + 1; j < array.length; j++) {

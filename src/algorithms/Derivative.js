@@ -11,12 +11,12 @@ function de(f) {
 }
 
 // define the function
-const f = (x) => {
+const foo = (x) => {
   return x ** 2 + x + 1;
 };
 
 // define the first derivative of f
-const f1 = de(f);
+const f1 = de(foo);
 
 // calculate the slope when x = 3
 console.log(f1(3));
