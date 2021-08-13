@@ -45,6 +45,7 @@ export default class LinkedList<Item> {
     node.item = item;
   }
 
+  // insertion in a list
   insert(item: Item, index: number) {
     if (item == null) throw new Error("Null Pointer");
     if (index >= 0 && index <= this.size()) {
@@ -66,6 +67,7 @@ export default class LinkedList<Item> {
     }
   }
 
+  // deletion in a list
   removeAt(index: number) {
     if (index >= 0 && index < this.count) {
       let curr = this.first;
@@ -88,6 +90,7 @@ export default class LinkedList<Item> {
     return this.removeAt(index);
   }
 
+  // Search a list
   indexOf(item: Item) {
     let curr = this.first;
 

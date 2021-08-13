@@ -4,7 +4,7 @@ function goldenRatio(f, t) {
 
   // iterate n to approach the golden ratio to the precision t
   let n = 1;
-  while (true) {
+  while (n) {
     if (Math.abs(f(n + 2, memo) / f(n + 1, memo) - f(n + 1, memo) / f(n, memo)) < t) {
       console.log(n);
       return f(n + 1, memo) / f(n, memo);
